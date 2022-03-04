@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorGreen">#3dd598</color>
+    <color name="colorRed">#fd565d</color>
+    <color name="colorYellow">#ffc442</color>
+    <color name="colorDarkerText">#2d2e2f</color>
+    <color name="colorOverBackground">#f7f8f9</color>
+
+    <color name="colorPrimaryDark">#F4F5F5</color>
+    <color name="colorOverBackgroundDarker">#F4F5F5</color>
+    <color name="colorOverBackgroundMoreDarker">#E4E4E4</color>
+    <color name="colorLightGray">#DADADA</color>
+    <color name="colorLighterDarkText">#707070</color>
+    <color name="colorMyBlue">#03A9F4</color>
+    <color name="colorNoteBg">#ffcccc</color>
+
+
+    <color name="shadow_color">#3C3C3C</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="light_grey">#E8E8E8</color>
+    <color name="colorBlack">#191414</color>
+
+</resources>

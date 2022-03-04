@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/note_item_constraint"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/note_item_bg"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingStart="15dp"
+    android:paddingTop="5dp"
+    android:paddingEnd="15dp"
+    android:paddingBottom="15dp"
+    tools:ignore="TouchTargetSizeCheck">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/note_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat"
+            android:padding="5dp"
+            android:scrollHorizontally="false"
+            android:text="Topic title"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/colorRed"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:autoSizeMaxTextSize="22sp"
+            app:autoSizeMinTextSize="10sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/note_image"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/light_shadow_bg"
+        android:backgroundTint="#ffffff"
+        android:padding="6dp"
+        android:src="@drawable/ic_star"
+        android:visibility="gone">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/note_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:focusable="true"
+        android:fontFamily="@font/montserrat"
+        android:gravity="fill_horizontal"
+        android:padding="4dp"
+        android:scrollHorizontally="false"
+        android:text="Topic..."
+        android:textColor="@color/colorDarkerText"
+        android:textIsSelectable="false"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:autoSizeMaxTextSize="22sp"
+        app:autoSizeMinTextSize="10sp"
+        app:autoSizeTextType="uniform" />
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+

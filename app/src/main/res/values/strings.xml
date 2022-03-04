@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Ehliyet Sınavı Soruları</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="sign_category">Sign Category</string>
+    <string name="trafik_levhalar">Trafik Levhaları</string>
+    <string name="el_isaretleri">El İşaretleri</string>
+    <string name="ad_attribution">Ad</string>
+    <string name="correct_20">Tebrikler!</string>
+    <string name="correct_15">Biraz Daha Gayret!</string>
+    <string name="correct_10">Çok Çalışman Gerekiyor!</string>
+
+    <string name="main_activity_banner">ca-app-pub-1817806996114286/3979139508</string>
+    <string name="notes_banner">ca-app-pub-1817806996114286/9028286204</string>
+    <string name="signs_banner">ca-app-pub-1817806996114286/9713670153</string>
+    <string name="question_transition">ca-app-pub-1817806996114286/7535241131</string>
+    <string name="image_question_transition">ca-app-pub-1817806996114286/9138955082</string>
+    <string name="main_activity_transition">ca-app-pub-1817806996114286/1176704583</string>
+    <string name="notes_transition">ca-app-pub-1817806996114286/8863622911</string>
+    <string name="signs_transition">ca-app-pub-1817806996114286/2344631812</string>
+    <string name="hands_transition">ca-app-pub-1817806996114286/5551063866</string>
+    <string name="hand_banner">ca-app-pub-1817806996114286/1111441197</string>
+    <string name="result_banner">ca-app-pub-1817806996114286/1607949424</string>
+    <string name="app_open_ad">ca-app-pub-1817806996114286/6893077451</string>
+
+
+
+
+</resources>

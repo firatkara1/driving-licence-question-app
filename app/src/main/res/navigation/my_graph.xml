@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.gold.ehliyetuygulamasi.view.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_signCategoryFragment"
+            app:destination="@id/signCategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.gold.ehliyetuygulamasi.view.CategoryFragment"
+        android:label="CategoryFragment" >
+        <action
+            android:id="@+id/action_categoryFragment_to_questionFragment"
+            app:destination="@id/questionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionFragment"
+        android:name="com.gold.ehliyetuygulamasi.QuestionFragment"
+        android:label="QuestionFragment" />
+    <fragment
+        android:id="@+id/signCategoryFragment"
+        android:name="com.gold.ehliyetuygulamasi.view.SignCategoryFragment"
+        android:label="fragment_sign_category"
+        tools:layout="@layout/fragment_sign_category" >
+        <action
+            android:id="@+id/action_signCategoryFragment_to_signActivity"
+            app:destination="@id/signActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/signActivity"
+        android:name="com.gold.ehliyetuygulamasi.view.SignActivity"
+        android:label="activity_sign"
+        tools:layout="@layout/activity_sign" />
+</navigation>

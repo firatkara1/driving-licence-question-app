@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/result_bg"
+    tools:context=".view.ResultActivity">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/result_adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        app:adSize="LARGE_BANNER"
+        app:adUnitId="@string/result_banner"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/imageView"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="8dp"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/resultTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result_adView"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/congr"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/resultTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/bigshot_one"
+        android:padding="4dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Başarı"
+        android:textColor="@color/colorLighterDarkText"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/score"
+        app:layout_constraintEnd_toEndOf="@+id/resultTxt"
+        app:layout_constraintStart_toStartOf="@+id/resultTxt"
+        app:layout_constraintTop_toBottomOf="@+id/resultTxt" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/light_shadow_bg"
+        android:backgroundTint="@color/colorMyBlue"
+        android:drawablePadding="2dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="start|center_vertical"
+        android:padding="8dp"
+        android:text="5/25"
+        android:textColor="@color/colorOverBackground"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:drawableStartCompat="@drawable/ic_cup_24"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Kazanılan Puan"
+        android:textColor="@color/colorLighterDarkText"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/earnedPoints"
+        app:layout_constraintEnd_toEndOf="@+id/score"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/score"
+        app:layout_constraintTop_toBottomOf="@+id/score" />
+
+    <TextView
+        android:id="@+id/earnedPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/light_shadow_bg"
+        android:backgroundTint="@color/colorGreen"
+        android:drawablePadding="2dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="start|center_vertical"
+        android:padding="8dp"
+        android:text="500"
+        android:textColor="@color/colorOverBackground"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:drawableStartCompat="@drawable/ic_star_24"
+        app:layout_constraintBottom_toTopOf="@+id/homeBtn"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/homeBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/red_btn_bg"
+        android:enabled="true"
+        android:fontFamily="@font/museo_sans500"
+        android:text="Ana Sayfa"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/earnedPoints"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

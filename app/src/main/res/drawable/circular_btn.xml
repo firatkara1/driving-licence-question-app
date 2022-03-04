@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list android:state_pressed="true">
+        <item>
+            <shape android:shape="oval">
+                <padding android:bottom="8dp" android:left="8dp" android:right="8dp" android:top="8dp" />
+
+                <solid android:color="#00CCCCCC" />
+
+
+            </shape>
+        </item>
+        <item>
+            <shape android:shape="oval">
+
+                <solid android:color="@color/colorOverBackgroundMoreDarker" />
+
+            </shape>
+        </item>
+        </layer-list>
+    </item>
+    <item android:state_pressed="false">
+       <layer-list android:state_pressed="true">
+            <item>
+                <shape android:shape="oval">
+                    <padding android:bottom="2dp" android:left="2dp" android:right="2dp" android:top="2dp" />
+
+                    <solid android:color="#00CCCCCC" />
+
+
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="oval">
+                    <padding android:bottom="2dp" android:left="2dp" android:right="2dp" android:top="2dp" />
+
+                    <solid android:color="#10CCCCCC" />
+
+
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="oval">
+                    <padding android:bottom="2dp" android:left="2dp" android:right="2dp" android:top="2dp" />
+
+                    <solid android:color="#20CCCCCC" />
+
+
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="oval">
+                    <padding android:bottom="2dp" android:left="2dp" android:right="2dp" android:top="2dp" />
+
+                    <solid android:color="#30CCCCCC" />
+
+
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="oval">
+                    <padding android:bottom="2dp" android:left="2dp" android:right="2dp" android:top="2dp" />
+
+                    <solid android:color="#50CCCCCC" />
+
+
+                </shape>
+            </item>
+
+            <!-- Background -->
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="@color/colorOverBackground" />
+
+                </shape>
+            </item>
+
+
+        </layer-list>
+    </item>
+
+</selector>
+
+
